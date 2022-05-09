@@ -3,7 +3,7 @@ const mensaje = document.querySelector("#columna-derecha");
 
 
 function btnEncriptar(){
-    const textoEncriptado = encriptar(inputTexto.value);
+    var textoEncriptado = encriptar(inputTexto.value);
     mensaje.value = textoEncriptado;
 }
 function encriptar(TextoAEncriptar){
