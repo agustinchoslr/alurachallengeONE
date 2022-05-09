@@ -1,5 +1,5 @@
 const inputTexto = document.querySelector("#ingresar-texto");
-const mensaje = document.querySelector("#columna-derecha");
+let mensaje = document.querySelector("#columna-derecha");
 
 
 function btnEncriptar(){
