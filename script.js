@@ -1,9 +1,9 @@
 const inputTexto = document.querySelector("#ingresar-texto");
-let mensaje = document.querySelector("#columna-derecha");
+const mensaje = document.querySelector("#columna-derecha");
 
 
 function btnEncriptar(){
-    var textoEncriptado = encriptar(inputTexto.value);
+    const textoEncriptado = encriptar(inputTexto.value);
     mensaje.value = textoEncriptado;
 }
 function encriptar(TextoAEncriptar){
@@ -11,8 +11,8 @@ function encriptar(TextoAEncriptar){
    TextoAEncriptar = TextoAEncriptar.toLowerCase();
 for (let i = 0; i< matrizCodigo.length; i++){
     if(TextoAEncriptar.includes(matrizCodigo[i][0])){
-        TextoAEncriptar = TextoAEncriptar.replaceAll(matrizCodigo[i][0]),
-        matrizCodigo[i][1]
+        TextoAEncriptar = TextoAEncriptar.replaceAll
+        (matrizCodigo[i][0],matrizCodigo[i][1])
     }
 }
 return TextoAEncriptar;
