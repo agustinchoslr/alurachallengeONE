@@ -5,7 +5,6 @@ const mensaje = document.querySelector("#columna-derecha");
 function btnEncriptar(){
     const textoEncriptado = encriptar(inputTexto.value);
     mensaje.value = textoEncriptado;
-    return textoEncriptado;
 }
 function encriptar(TextoAEncriptar){
    let matrizCodigo = [["e", "enter"], ["i", "imes"], ["a", "ai"], ["o", "ober"], ["u","ufat"]]
